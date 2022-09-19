@@ -5,9 +5,62 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: darkslategray;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.tag {
+  opacity: 0;
+  transform: translate(0, 10vh);
+  transition: all 1s;
+}
+
+.tag.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* HOME STYLES */
+.title {
+  background-image: url(../src/images/live-edge-shelves.jpg);
+  background-position: 48% 95%;
+  height: 95vh;
+  margin-bottom: 50vh;
+}
+
+.title h1 {
+  font-size: 75px;
+  padding: 10% 5% 0 5%;
+}
+
+.title h2 {
+  font-weight: 650;
+}
+
+.title p {
+  font-size: 35px;
+  font-weight: 700;
+  padding: 10% 10% 0 10%;
+  color: white;
+}
+
+/* END HOME STYLES */
+
+/* PROJECT STYLES */
+.projects {
+  background-image: url(../src/images/front-porch.jpg);
+  background-position: 84% 20%;
+  height: 95vh;
+  border-top: 5px solid black;
+}
+
+.projects h1 {
+    font-size: 75px;
+    padding: 5% 5% 0 5%;
+}
+
+/* END PROJECT STYLES */

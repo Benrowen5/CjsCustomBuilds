@@ -1,16 +1,18 @@
 import React from 'react';
+import Projects from './projects';
 
 const Home = () => {
     return (
         <section>
-            <div>
+            <div className="title">
                 <h1>CJs Custom Builds</h1>
-                <p>
-                    Welcome to CJs Custom Builds. We build to suit - whatever your needs, we will find a solution that you are thrilled about.
-                </p>
-                <p>
-                    Flooring, live-edge furniture and shelving, custom projects...
-                </p>
+                <h2>Live Edge Furniture | Flooring & Trim | Custom Carpentry | Restoration</h2>
+                {/* <p>
+                    Welcome to CJs Custom Builds. We build to suit - we offer solutions that you are thrilled about.
+                </p> */}
+            </div>
+            <div className="projects">
+                <Projects/>
             </div>
         </section>
     );
